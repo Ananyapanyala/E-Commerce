@@ -10,13 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Metas -->
-    <title>ThewayShop - Ecommerce Bootstrap 4 HTML Template</title>
+    <title>6 Seasons Organic</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <!-- Bootstrap CSS -->
@@ -43,13 +43,13 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="custom-select-box">
                         <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-							<option>¥ JPY</option>
-							<option>$ USD</option>
-							<option>€ EUR</option>
+							<option>INR</option>
+							<option>USD</option>
+							<option>EUR</option>
 						</select>
                     </div>
                     <div class="right-phone-box">
-                        <p>Call US :- <a href="#"> +11 900 800 100</a></p>
+                        <p>Call US :- <a href="#"> +91 9100066659</a></p>
                     </div>
                     <div class="our-link">
                         <ul>
@@ -112,7 +112,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo1.png" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
@@ -691,6 +691,37 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        // Function to get URL query parameters
+        function getQueryParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+    
+        // Get product details from the URL
+        const productID = getQueryParameter('productID');
+        const productName = getQueryParameter('name');
+        const productPrice = getQueryParameter('price');
+        const productDescription = getQueryParameter('desc');
+        const productImage = getQueryParameter('img');
+    
+        // Update product details on the page
+        if (productID) {
+            document.querySelector('.single-product-details h2').textContent = productName || "Product Name";
+            document.querySelector('.single-product-details h5').textContent = `$${productPrice || "0.00"}`;
+            document.querySelector('.single-product-details p').textContent = productDescription || "No description available.";
+    
+            // Update image carousel - assuming you want a single main image to update
+            const carouselImages = document.querySelectorAll('.carousel-item img');
+            carouselImages.forEach(img => {
+                img.src = `images/${productImage || 'default.jpg'}`; // Fallback to default image if none is provided
+            });
+        } else {
+            document.querySelector('.single-product-details h2').textContent = "Product not found";
+        }
+    </script>
+    
+    
 </body>
 
 </html>

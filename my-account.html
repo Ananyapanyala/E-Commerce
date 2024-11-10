@@ -43,13 +43,13 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="custom-select-box">
                         <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-							<option>¥ JPY</option>
-							<option>$ USD</option>
-							<option>€ EUR</option>
+							<option>INR</option>
+							<option>USD</option>
+							<option>EUR</option>
 						</select>
                     </div>
                     <div class="right-phone-box">
-                        <p>Call US :- <a href="#"> +11 900 800 100</a></p>
+                        <p>Call US :- <a href="#"> +91 9100066659</a></p>
                     </div>
                     <div class="our-link">
                         <ul>
@@ -112,7 +112,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo11.png" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
@@ -221,7 +221,7 @@
                         <div class="account-box">
                             <div class="service-box">
                                 <div class="service-icon">
-                                    <a href="#"> <i class="fa fa-gift"></i> </a>
+                                    <a href="orders.html"> <i class="fa fa-gift"></i> </a>
                                 </div>
                                 <div class="service-desc">
                                     <h4>Your Orders</h4>
@@ -234,7 +234,7 @@
                         <div class="account-box">
                             <div class="service-box">
                                 <div class="service-icon">
-                                    <a href="#"><i class="fa fa-lock"></i> </a>
+                                    <a href="security.html"><i class="fa fa-lock"></i> </a>
                                 </div>
                                 <div class="service-desc">
                                     <h4>Login &amp; security</h4>
@@ -243,11 +243,12 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-lg-4 col-md-12">
                         <div class="account-box">
                             <div class="service-box">
                                 <div class="service-icon">
-                                    <a href="#"> <i class="fa fa-location-arrow"></i> </a>
+                                    <a href="addressess.html"> <i class="fa fa-location-arrow"></i> </a>
                                 </div>
                                 <div class="service-desc">
                                     <h4>Your Addresses</h4>
@@ -588,6 +589,21 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        // Function to open login & security settings
+        function goToSecuritySettings() {
+            window.location.href = 'security.html';
+        }
+    
+        // Additional functions for other interactive elements
+        function viewPaymentOptions() {
+            window.location.href = 'addressess.html';
+        }
+        function openPayPalSettings() {
+            window.location.href = 'orders.html';
+        }
+        // Define other functions as needed
+    </script>
 </body>
 
 </html>
