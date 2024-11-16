@@ -61,10 +61,19 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="login-box">
-						<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-							<option>Register Here</option>
-							<option>Sign In</option>
-						</select>
+						<select id="account-dropdown" class="selectpicker show-tick form-control" data-placeholder="Sign In">
+                            <option value="">My Account</option>
+                            <option value="signup.html">Sign Up</option>
+                            <option value="signin.html">Sign In</option>
+                        </select>
+                        <script>
+                            document.getElementById('account-dropdown').addEventListener('change', function() {
+                                const selectedValue = this.value;
+                                if (selectedValue) {
+                                    window.location.href = selectedValue;  // Redirect to the selected page
+                                }
+                            });
+                        </script>
 					</div>
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
