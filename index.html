@@ -32,7 +32,45 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<style>.text-center {
+    position: relative;
+}
 
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.video-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.video-overlay p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.video-overlay a.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.video-overlay a.btn:hover {
+    background-color: #218838;
+}
+</style>
 </head>
 
 <body>
@@ -53,9 +91,14 @@
                     </div>
                     <div class="our-link">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
-                            <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
-                            <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
+                            <li><a href="signin.html"><i class="fa fa-user s_color"></i> My Account</a></li>
+                            <li>
+                                <a href=" https://maps.app.goo.gl/WAmF8TErCU9FDNVj9" target="_blank">
+                                  <i class="fas fa-location-arrow"></i> Our location
+                                </a>
+                              </li>
+                              
+                            <li><a href="contact-us.html"><i class="fas fa-headset"></i> Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -212,7 +255,7 @@
     <div id="slides-shop" class="cover-slides">
         <ul class="slides-container">
             <li class="text-center">
-                <img src="images/banner-01.jpg" alt="">
+                <img src="images/masalas.jpg" alt="">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -224,7 +267,7 @@
                 </div>
             </li>
             <li class="text-center">
-                <img src="images/banner-02.jpg" alt="">
+                <img src="images/spice.jpg" alt="">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -235,18 +278,19 @@
                     </div>
                 </div>
             </li>
-            <li class="text-center">
-                <img src="images/banner-03.jpg" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Welcome To <br>6 Seasons Organic</strong></h1>
-                            <p class="m-b-40">Experience the freshness of organic products in real-time. Track our journey and explore trends that shape healthier choices over time.</p>
-                            <p><a class="btn hvr-hover" href="shop.html">Shop Now</a></p>
-                        </div>
-                    </div>
+            <li class="text-center position-relative">
+                <video class="img-fluid" autoplay loop muted playsinline>
+                    <source src="images/honey.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Overlay Container -->
+                <div class="video-overlay">
+                    <h1 class="m-b-20"><strong>Welcome To <br>6 Seasons Organic</strong></h1>
+                    <p class="m-b-40">Experience the freshness of organic products in real-time. Track our journey and explore trends that shape healthier choices over time.</p>
+                    <p><a class="btn hvr-hover" href="shop.html">Shop Now</a></p>
                 </div>
             </li>
+            
         </ul>
         <div class="slides-navigation">
             <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -261,43 +305,26 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="shop-cat-box">
-                        <img class="img-fluid" src="images/categories_img_01.jpg" alt="" />
-                        <a class="btn hvr-hover" href="#">Sweet Essentials</a>
+                        <img class="img-fluid" src="images/insta1.jpeg" alt="" />
+                        <a class="btn hvr-hover" href="shop.html">Sweet Essentials</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="shop-cat-box">
                         <img class="img-fluid" src="images/categories_img_02.jpg" alt="" />
-                        <a class="btn hvr-hover" href="#">Healthy Staples</a>
+                        <a class="btn hvr-hover" href="shop.html">Healthy Staples</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="shop-cat-box">
                         <img class="img-fluid" src="images/categories_img_03.jpg" alt="" />
-                        <a class="btn hvr-hover" href="#">Flavor Boosters</a>
+                        <a class="btn hvr-hover" href="shop.html">Flavor Boosters</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Categories -->
-	
-	<div class="box-add-products">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12">
-					<div class="offer-box-products">
-						<img class="img-fluid" src="images/add-img-01.jpg" alt="" />
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12">
-					<div class="offer-box-products">
-						<img class="img-fluid" src="images/add-img-02.jpg" alt="" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
     <!-- Start Products  -->
     <div class="products-box">
@@ -305,8 +332,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-all text-center">
-                        <h1>Fruits & Vegetables</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
+                        <h1>Groceries & Staples</h1>
+                        <p>Pure and wholesome essentials for your kitchen, straight from nature!</p>
                     </div>
                 </div>
             </div>
@@ -425,62 +452,26 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-all text-center">
-                        <h1>latest blog</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
+                        <h1>Latest Blog</h1>
+                        <p>Discover insights, tips, and stories about organic living, straight from the heart of 6seasonsorganic.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4 col-xl-4">
                     <div class="blog-box">
                         <div class="blog-img">
-                            <img class="img-fluid" src="images/blog-img.jpg" alt="" />
+                            <img class="img-fluid" src="images/blog.jpg" alt="" />
                         </div>
                         <div class="blog-content">
                             <div class="title-blog">
-                                <h3>Fusce in augue non nisi fringilla</h3>
-                                <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet lacinia elit id lobortis.</p>
+                                <h3>6 Seasons Organic</h3>
+                                <p>At 6seasonsorganic, we bring you the finest organic products, cultivated with care and packed with goodness. Experience the essence of nature in every bite and transform your lifestyle with our wholesome offerings.</p>
                             </div>
                             <ul class="option-blog">
-                                <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                                <li><a href="#"><i class="far fa-comments"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-4">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img class="img-fluid" src="images/blog-img-01.jpg" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <div class="title-blog">
-                                <h3>Fusce in augue non nisi fringilla</h3>
-                                <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet lacinia elit id lobortis.</p>
-                            </div>
-                            <ul class="option-blog">
-                                <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                                <li><a href="#"><i class="far fa-comments"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-4">
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img class="img-fluid" src="images/blog-img-02.jpg" alt="" />
-                        </div>
-                        <div class="blog-content">
-                            <div class="title-blog">
-                                <h3>Fusce in augue non nisi fringilla</h3>
-                                <p>Nulla ut urna egestas, porta libero id, suscipit orci. Quisque in lectus sit amet urna dignissim feugiat. Mauris molestie egestas pharetra. Ut finibus cursus nunc sed mollis. Praesent laoreet lacinia elit id lobortis.</p>
-                            </div>
-                            <ul class="option-blog">
-                                <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-eye"></i></a></li>
-                                <li><a href="#"><i class="far fa-comments"></i></a></li>
+                                <li><a href="https://6seasonsorganic.com/favorites"><i class="far fa-heart"></i></a></li>
+                                <li><a href="https://6seasonsorganic.blogspot.com/2023/11/6seasons-organic.html"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="contact-us.html"><i class="far fa-comments"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -488,6 +479,7 @@
             </div>
         </div>
     </div>
+    
     <!-- End Blog  -->
 
 
@@ -496,81 +488,65 @@
         <div class="main-instagram owl-carousel owl-theme">
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-01.jpg" alt="" />
+                    <img src="images/insta1.jpeg" alt="Instagram Image 1" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/6_seasons_organic/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/insta2.jpeg" alt="Instagram Image 1" />
+                    <div class="hov-in">
+                        <a href="https://www.instagram.com/6_seasons_organic/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-02.jpg" alt="" />
+                    <img src="images/insta3.jpeg" alt="Instagram Image 1" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/6_seasons_organic/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-03.jpg" alt="" />
+                    <img src="images/insta4.jpeg" alt="Instagram Image 1" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/6_seasons_organic/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-04.jpg" alt="" />
+                    <img src="images/insta5.jpeg" alt="Instagram Image 1" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/6_seasons_organic/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <img src="images/insta6.jpeg" alt="Instagram Image 1" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/6_seasons_organic/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-06.jpg" alt="" />
+                    <img src="images/insta1.jpeg" alt="Instagram Image 1" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/6_seasons_organic/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-07.jpg" alt="" />
+                    <img src="images/insta2.jpeg" alt="Instagram Image 1" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-08.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-09.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/6_seasons_organic/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -597,27 +573,34 @@
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-top-box">
                             <h3>Newsletter</h3>
-                            <form class="newsletter-box">
+                            <form id="newsletter-form" class="newsletter-box">
                                 <div class="form-group">
-                                    <input class="" type="email" name="Email" placeholder="Email Address*" />
+                                    <input id="email-input" class="form-control" type="email" name="Email" placeholder="Email Address*" required />
                                     <i class="fa fa-envelope"></i>
                                 </div>
-                                <button class="btn hvr-hover" type="submit">Submit</button>
+                                <button id="submit-button" class="btn hvr-hover" type="submit">Submit</button>
                             </form>
+                            <div id="response-message" style="display:none;"></div>
                         </div>
                     </div>
+                    
+                    
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-top-box">
                             <h3>Social Media</h3>
                             <p>Follow us for updates on seasonal and organic products.</p>
                             <ul>
-                                <li><a href="https://www.facebook.com/6seasonsorganic"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.twitter.com/6seasonsorganic"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.linkedin.com/company/6seasonsorganic"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.google.com"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.pinterest.com/6seasonsorganic"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.whatsapp.com"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.facebook.com/people/6-seasons/61552154805127/?sfnsn=wiwspmo&mibextid=vk8aRt"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F6seasonsorganic"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/6seasons-organic-286223299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/6_seasons_organic/?hl=en"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/@6seasonsorganics"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                                <li>
+                                    <a href="https://wa.me/919100066659" target="_blank">
+                                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -635,21 +618,21 @@
                         <div class="footer-link">
                             <h4>Information</h4>
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Customer Service</a></li>
-                                <li><a href="#">Our Sitemap</a></li>
-                                <li><a href="#">Terms &amp; Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact-us.html">Customer Service</a></li>
+                                <li><a href="https://maps.app.goo.gl/WAmF8TErCU9FDNVj9">Our Sitemap</a></li>
+                                <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="delivery-info.html">Delivery Information</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12">             
                         <div class="footer-link-contact">
                             <h4>Contact Us</h4>
                             <ul>
                                 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: 6seasonsorganic, Suite 101, <br>123 Organic Road, <br> Hyderabad, Telangana, India</p>
+                                    <p><i class="fas fa-map-marker-alt"></i>Address: 6seasonsorganic H.no 4-59/6/19,<br>Srinivasa Nagar Colony Mandaipally Road<br>Thumukunta, Shamirpet<br>Secunderabad, Telangana 500078</p>
                                 </li>
                                 <li>
                                     <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+91-9100066659">+91-9100066659</a></p>
@@ -692,6 +675,46 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+    <script>document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form from submitting normally
+    
+        // Get the email value from the input field
+        var email = document.getElementById("email-input").value;
+    
+        // Validate the email format
+        if (!validateEmail(email)) {
+            showMessage("Please enter a valid email address.", "error");
+            return;
+        }
+    
+        // Simulate a form submission (no real server call yet)
+        // In real-world, this is where you'd use AJAX to send the data to your server.
+        setTimeout(function() {
+            // Simulate a success message
+            showMessage("Thank you for subscribing!", "success");
+            document.getElementById("newsletter-form").reset(); // Reset the form after successful submission
+        }, 1000); // Simulating server processing delay
+    });
+    
+    // Email validation function
+    function validateEmail(email) {
+        var re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return re.test(email);
+    }
+    
+    // Function to show success or error message
+    function showMessage(message, type) {
+        var responseMessage = document.getElementById("response-message");
+        responseMessage.style.display = "block";
+        responseMessage.textContent = message;
+    
+        if (type === "success") {
+            responseMessage.style.color = "green";
+        } else {
+            responseMessage.style.color = "red";
+        }
+    }
+    </script>
 </body>
 
 </html>
