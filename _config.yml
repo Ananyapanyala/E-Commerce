@@ -1,0 +1,18 @@
+# _config.yml
+
+# Site settings
+title: 6Seasons Organic
+description: EAT HEALTHY LIVE HEALTHY!
+url: https://Ananyapanyala.github.io  # Change this to your GitHub Pages URL
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Optional settings
+paginate: 5  # Number of posts per page (for paginated blogs)
+exclude:
+  - README.md  # Exclude files you don't need for the build
